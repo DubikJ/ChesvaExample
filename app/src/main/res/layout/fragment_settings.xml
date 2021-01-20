@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/type_con_layout"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:theme="@style/EditTextHint"
+                app:hintTextAppearance="@style/TextSizeInputLayoutLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <EditText
+                    android:id="@+id/type_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/type_connection"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_middle"
+                    android:fontFamily="@string/font_family_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/server_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextHint"
+                app:hintTextAppearance="@style/TextSizeInputLayoutLabel"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/type_con_layout">
+
+                <EditText
+                    android:id="@+id/server"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/server"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_middle"
+                    android:fontFamily="@string/font_family_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/language_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextHint"
+                app:hintTextAppearance="@style/TextSizeInputLayoutLabel"
+                app:layout_constraintTop_toBottomOf="@+id/server_layout">
+
+                <EditText
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/select_language"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_middle"
+                    android:fontFamily="@string/font_family_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/license_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/language_layout">
+
+                <TextView
+                    android:id="@+id/tvLicenseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/license"
+                    style="@style/TextStyle_Standart_Grey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvLicense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="8dp"
+                    style="@style/TextStyle_Standart_Accent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLicenseName"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rfid_power_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/license_layout">
+
+                <TextView
+                    android:id="@+id/tvRfidName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:text="@string/rfid_power_name"
+                    style="@style/TextStyle_Standart_Grey"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <com.warkiz.widget.IndicatorStayLayout
+                    android:id="@+id/seekPowerScannerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvRfidName">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/seekPowerScanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_max="100"
+                        app:isb_min="0"
+                        app:isb_ticks_count="2"
+                        app:isb_show_tick_texts="true"
+                        app:isb_tick_texts_size="@dimen/text_size_middle"
+                        app:isb_tick_texts_color="@color/colorGrey"
+                        app:isb_thumb_color="@color/colorPrimary"
+                        app:isb_thumb_size="20dp"
+                        app:isb_thumb_drawable="@drawable/seek_bap_thumb"
+                        app:isb_track_rounded_corners="true"
+                        app:isb_track_background_color="@color/colorPrimary"
+                        app:isb_track_background_size="5dp"
+                        app:isb_track_progress_color="@color/colorPrimary"
+                        app:isb_track_progress_size="5dp"
+                        app:isb_indicator_content_layout="@layout/seekbar_custom_indicator"
+                        app:isb_indicator_text_color="@color/colorGrey"
+                        app:isb_show_indicator="custom"/>
+
+                </com.warkiz.widget.IndicatorStayLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rfid_standard_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:theme="@style/EditTextHint"
+                app:hintTextAppearance="@style/TextSizeInputLayoutLabel"
+                app:layout_constraintTop_toBottomOf="@+id/rfid_power_layout">
+
+                <EditText
+                    android:id="@+id/rfid_standard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/rfid_standard"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_middle"
+                    android:fontFamily="@string/font_family_regular" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        style="@style/ButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/complete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAllCaps="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

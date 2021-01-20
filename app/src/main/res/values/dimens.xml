@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_largest">38dp</dimen>
+    <dimen name="text_size_large">25dp</dimen>
+    <dimen name="text_size_middlest">20dp</dimen>
+    <dimen name="text_size_middle">16dp</dimen>
+    <dimen name="text_size_small">10dp</dimen>
+
+    <dimen name="basic_margin_list_selection">2dp</dimen>
+    <dimen name="basic_margin_left_list_selection">25dp</dimen>
+    <dimen name="basic_margin_top_list_selection">10dp</dimen>
+
+    <dimen name="geiger_button_margin">16dp</dimen>
+
+    <dimen name="geiger_margin_list">12dp</dimen>
+    <dimen name="size_cap_status_button_width">85dp</dimen>
+    <dimen name="size_cap_status_button_height">65dp</dimen>
+
+</resources>

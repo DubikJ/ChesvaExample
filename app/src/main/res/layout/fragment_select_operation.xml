@@ -1,0 +1,83 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/basic_margin_left_list_selection"
+            android:layout_marginRight="@dimen/basic_margin_left_list_selection">
+
+            <Button
+                android:id="@+id/btnBoxAddRfid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/box_add_rfid_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnMainAssetAddRfid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/main_asset_add_rfid_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnAssembleBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/assemble_box_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnMainAssetIssuing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/main_asset_issuing_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/btnMainAssetReturning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/main_asset_returning_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnMainAssetSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/main_asset_searching_operation"
+                style="@style/ButtonClick"
+                android:textAllCaps="false"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

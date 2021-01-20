@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179148106271",
+    "project_id": "chesva-e54b1",
+    "storage_bucket": "chesva-e54b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179148106271:android:2c1970a754759490db032a",
+        "android_client_info": {
+          "package_name": "ua.com.expertsolution.chesva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179148106271-j19ng3s3dtl48hjpd4fp80c9prlg522t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAhusvjiOI2GKGdc_smv9ljEncjWvdf70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179148106271-j19ng3s3dtl48hjpd4fp80c9prlg522t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

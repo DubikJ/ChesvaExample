@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="FilteredInstantAutoComplete">
+    <attr name="hint" format="string"/>
+    <attr name="drawableRight" format="reference|color" />
+  </declare-styleable>
+
+</resources>

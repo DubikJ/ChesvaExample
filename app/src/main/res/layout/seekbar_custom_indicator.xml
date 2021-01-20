@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seekbar_indicator_layout"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="3dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/isb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_middle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        style="@style/TextStyle_Standart_Grey"/>
+
+</LinearLayout>
+

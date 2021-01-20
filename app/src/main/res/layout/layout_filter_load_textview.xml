@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textInputLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:errorTextAppearance="@style/error_appearance"
+    app:hintTextAppearance="@style/TextSizeInputLayoutLabel">
+
+    <ua.com.expertsolution.chesva.ui.widgets.InstantAutoComplete
+        android:id="@+id/instantAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:imeOptions="actionSearch"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_middle"
+        android:fontFamily="@string/font_family_regular"
+        style="@style/AutoCompleteLine"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="true"
+        android:progressDrawable="@drawable/progress_bar_horizontal"/>
+
+</com.google.android.material.textfield.TextInputLayout>

@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_load"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/vertical_progress_barr"
+        android:progressDrawable="@drawable/vertical_progress_barr"
+        app:layout_constraintBottom_toTopOf="@+id/btnContainer"
+        app:layout_constraintStart_toStartOf="@+id/btnContainer"
+        app:layout_constraintEnd_toEndOf="@+id/btnContainer"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/TextStyle_Standart_Bold_Accent"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar_load"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar_load"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar_load"/>
+
+    <TextView
+        android:id="@+id/tv_load_state"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        style="@style/TextStyle_Small_White"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar_load"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar_load"
+        app:layout_constraintEnd_toEndOf="@+id/progress_bar_load"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_bar_load"/>
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/basic_margin_left_list_selection"
+        android:layout_marginRight="@dimen/basic_margin_left_list_selection"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/btnLoad"
+                style="@style/ButtonClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/download"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btnLoadCancel"
+                style="@style/ButtonClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnDownload"
+                android:layout_marginTop="15dp"
+                android:text="@string/cancel"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
